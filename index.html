@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Mollet Industries</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#services">Services</a> |
+            <a href="#services">Previous Work</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Additional Information</p>
+    </div>
+    <div class="main">
+        <h2>Welcome!</h2>
+        <p>This is the main content area.</p>
+    </div>
+</div>
+</body>
+</html>
+
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Define grid layout */
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "sidebar main";
+        grid-template-rows: 60px 1fr;
+        grid-template-columns: 200px 1fr;
+        gap: 10px;
+        height: 100vh; /* Full height */
+    }
+
+    /* Style the header */
+    .header {
+        grid-area: header;
+        background-color: #f8f9fa;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Style the sidebar */
+    .sidebar {
+        grid-area: sidebar;
+        background-color: #f8f9fa;
+        padding: 10px;
+    }
+
+    /* Style the main content */
+    .main {
+        grid-area: main;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+</style>
